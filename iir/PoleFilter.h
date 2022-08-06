@@ -121,7 +121,9 @@ namespace Iir {
 				BaseClass::setCascadeStorage (this->getCascadeStorage());
 				BaseClass::setPrototypeStorage (m_analogStorage, m_digitalStorage);
 			}
-
+		
+		PoleFilter(const PoleFilter&) = default;
+		
 	private:
 		Layout <MaxAnalogPoles> m_analogStorage = {};
 		Layout <MaxDigitalPoles> m_digitalStorage = {};

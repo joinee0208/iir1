@@ -51,6 +51,7 @@ namespace Iir {
         public:
         
         Cascade () = default;
+	Cascade(const Cascade&) = default;
 
         /**
          * To return the array from a function and to set it.
@@ -115,7 +116,7 @@ namespace Iir {
 
 	public:
 	CascadeStages() = default;
-		
+	CascadeStages(const CascadeStages&) = default;
 		
         public:
         /**

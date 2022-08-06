@@ -53,6 +53,7 @@ namespace Iir {
 	public:
 
 	Biquad() = default;
+	Biquad(const Biquad&) = default;
 	
 	/**
 	 * Calculate filter response at the given normalized frequency
